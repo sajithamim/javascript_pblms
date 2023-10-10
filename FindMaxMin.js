@@ -1,3 +1,4 @@
+// find Maximum and MInimum element from an array
 const arrayNum = [1, 5, 8, 4, 560];
 
 const maxFn = arr => {
