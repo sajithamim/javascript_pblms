@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Adding new Element dynaically</title>
+    <script type="text/javascript">
+      function addNode() {
+        var newP = document.createElement("p");
+        var textNode = document.createTextNode("This is a new text node");
+        newP.appendChild(textNode);
+        document.getElementById("firstP").appendChild(newP);
+        console.log("newP", newP);
+      }
+    </script>
+  </head>
+  <body>
+    <p id="firstP"></p>
+    <button onclick="addNode()">Add Node</button>
+  </body>
+</html>
